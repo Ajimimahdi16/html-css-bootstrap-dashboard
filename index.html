@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+     <title>bootstrap-dashboard</title>
+
+</head>
+
+
+
+<body>
+   <header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid bg-dark">
+
+      <!-- LOGO SINISTRA -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/duck.png" alt="Bootstrap" width="50" height="50">
+      </a>
+
+      <button class="navbar-toggler border-dark-subtle" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Catalogo libri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Anagrafica utenti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Storico prestiti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Help</a>
+          </li>
+        </ul>
+
+        <!-- Barra di ricerca -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+          <button class="btn btn-outline-success text-white border-white" type="submit">Cerca</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="row mt-3">
+      <h1 class="col-6">Catalogo Libri</h1>
+      <div class="col-6 text-end">
+        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+      </div>
+    </section>
+  </div>
+</header>
+
+<main class="container mt-4">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Titolo</th>
+        <th scope="col">Stato</th>
+        <th scope="col">Azione</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>I pilastri della terra</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td>I promessi sposi</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Il signore degli anelli</td>
+        <td><button type="button" class="btn btn-warning">In prestito</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Harry Potter e la pietra filosofale</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Il codice Da Vinci</td>
+        <td><button type="button" class="btn btn-danger">Non disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Shining</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>La divina commedia </td>
+        <td><button type="button" class="btn btn-warning">In prestito</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>il trono di spada </td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Il mondo di sofia </td>
+        <td><button type="button" class="btn btn-danger">Non disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Le cronache di Narnia: il leone,ia strega e l'armadio</td>
+        <td><button type="button" class="btn btn-warning">In prestito</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Il piccolo principe</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+      <tr>
+        <td>La storia infinita</td>
+        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+        <td>
+          <i class="bi bi-pencil me-2"></i>
+          <i class="bi bi-trash-fill"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+<footer class="mt-5">
+    
+    <!-- CARD TODO (con margine sopra) -->
+  <div class="card mt-4 mb-3" style="width: 18rem;">
+    <div class="card-header">
+      Todo
+    </div>
+
+    <ul class="list-group">
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" id="firstCheckbox">
+        <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+      </li>
+
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" id="secondCheckbox">
+        <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestito scaduti</label>
+      </li>
+
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" id="thirdCheckbox">
+        <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- CARD F.A.Q. -->
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      F.A.Q.
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false"
+                  aria-controls="flush-collapseOne">
+            Come aggiungere un nuovo libro?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse"
+             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Puoi aggiungere un libro cliccando sul pulsante "Aggiungi Libro" nel catalogo.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                  aria-controls="flush-collapseTwo">
+            Come posso accedere all'anagrafica utenti?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Puoi accedervi dal menu principale in alto nella pagina.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false"
+                  aria-controls="flush-collapseThree">
+            Posso usare questa dashboard da mobile?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse"
+             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Certo! È completamente responsive.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
